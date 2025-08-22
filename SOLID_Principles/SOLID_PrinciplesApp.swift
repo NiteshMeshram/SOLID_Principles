@@ -6,12 +6,18 @@
 //
 
 import SwiftUI
-
+// https://api.escuelajs.co/api/v1/products
 @main
 struct SOLID_PrinciplesApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
-        }
+                   let baseURL = URL(string: "https://api.escuelajs.co/api/v1")! // Platzi FakeAPI
+                   let client = URLSessionNetworkClient(baseURL: baseURL)
+                   let service = DefaultProductService(client: client)
+                   let repository = ProductRepository(service: service)
+                   let viewModel = ProductViewModel(repository: repository)
+
+                   ProductListView(viewModel: viewModel)
+               }
     }
 }

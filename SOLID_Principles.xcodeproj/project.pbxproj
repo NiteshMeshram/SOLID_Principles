@@ -45,6 +45,11 @@
 			path = SOLID_PrinciplesUITests;
 			sourceTree = "<group>";
 		};
+		38121AD12E560480001A93ED /* Test */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = Test;
+			sourceTree = "<group>";
+		};
 /* End PBXFileSystemSynchronizedRootGroup section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -78,6 +83,7 @@
 				38121A9D2E56017E001A93ED /* SOLID_Principles */,
 				38121AAB2E560181001A93ED /* SOLID_PrinciplesTests */,
 				38121AB52E560181001A93ED /* SOLID_PrinciplesUITests */,
+				38121AD12E560480001A93ED /* Test */,
 				38121A9C2E56017E001A93ED /* Products */,
 			);
 			sourceTree = "<group>";
@@ -109,6 +115,7 @@
 			);
 			fileSystemSynchronizedGroups = (
 				38121A9D2E56017E001A93ED /* SOLID_Principles */,
+				38121AD12E560480001A93ED /* Test */,
 			);
 			name = SOLID_Principles;
 			packageProductDependencies = (
